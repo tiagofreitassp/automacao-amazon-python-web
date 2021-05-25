@@ -46,6 +46,6 @@ Para visualizar as evidencias no documento pode usar o MS Office Word ou o Libre
 ###  - Inicializar a automação
 *Descricao:
 
-Abrir o terminal do Mac OS, Windows ou do PyCharm, digite behave para executar todos os cenarios disponiveis.
+Abrir o terminal do Mac OS, Windows ou do PyCharm, acesse o diretório do projeto e digite behave para executar todos os cenarios disponiveis.
 
 O webdriver deve ficar na pasta drivers, este projeto esta setado apenas para o Chrome no Mac OS e no Windows. Nao esqueca de verificar tambem a versao do navegador e baixar os webdrivers para os outros navegadores.
