@@ -10,6 +10,7 @@ Scripts de automação web na página da Amazon desenvolvido com Python, BDD(Beh
 * [Behave](https://behave.readthedocs.io/en/stable/)
 * [Selenium](https://selenium-python.readthedocs.io/)
 * [Chrome WebDriver](https://chromedriver.chromium.org/downloads)
+* [Google Chrome](https://www.google.com/intl/pt-BR/chrome/)
 * [Pycharm](https://www.jetbrains.com/pt-br/pycharm/)
 * [PyPI](https://pypi.org/project/selenium/)
 
