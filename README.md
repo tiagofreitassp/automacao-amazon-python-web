@@ -1,14 +1,15 @@
 # automacao-lojavirtual-python-web
-Scripts de automação web em uma Loja Virtual desenvolvido com Python, Unittest e Selenium.
+Scripts de automação web na página da Amazon desenvolvido com Python, BDD(Behave) e Selenium.
 
 ### Cobertura dos testes:  ###
 
-* Realizar compra online
+* Realizar consultas online
 
 ## Tecnologias:
-* [Python 3.8](https://www.python.org/)
-* [Unittest](https://docs.python.org/3/library/unittest.html)
+* [Python 3.9](https://www.python.org/)
+* [Behave](https://behave.readthedocs.io/en/stable/)
 * [Selenium](https://selenium-python.readthedocs.io/)
+* [Chrome WebDriver](https://chromedriver.chromium.org/downloads)
 * [Pycharm](https://www.jetbrains.com/pt-br/pycharm/)
 * [PyPI](https://pypi.org/project/selenium/)
 
@@ -29,15 +30,11 @@ O projeto foi criado para executar no MacOS. Mas pode receber adaptacoes para ex
 Recomendado utilizar o PyCharm, mas pode usar o Eclipse IDE ou Visual Studio Code.
 
 ###  - Fluxo
-*Descricao: Este script ira executar uma compra online, seguindo o fluxo desde a escolha do produto ate a etapa de confirmacao da compra.
+*Descricao: Este script ira executar consultas na página da Amazon.
 
 ###  - Massas
 *Descricao: 
-Apos a execucao as imagens de evidencias sao armazenadas na pasta evidencias.
-
-Para visualizar as evidencias no documento pode usar o MS Office Word ou o LibreOffice.
-
-Antes de executar nao esqueca de trocar as massas por uma adequada. Nao ha problema em usar a massa disponivel na feature desde que verifique antes se o site nao apagou do banco de dados.
+Não é necessario utilizar massas.
 
 ###  - Evidencias
 *Descricao:
@@ -48,8 +45,6 @@ Para visualizar as evidencias no documento pode usar o MS Office Word ou o Libre
 ###  - Inicializar a automação
 *Descricao:
 
-Inserir as massas para teste na classe myStoreTest.
-
-Abrir a classe myStoreTest.py no PyCharm.
+Abrir o terminal do Mac OS, Windows ou do PyCharm, digite behave para executar todos os cenarios disponiveis.
 
 O webdriver deve ficar na pasta drivers, este projeto esta setado apenas para o Chrome no Mac OS e no Windows. Nao esqueca de verificar tambem a versao do navegador e baixar os webdrivers para os outros navegadores.
