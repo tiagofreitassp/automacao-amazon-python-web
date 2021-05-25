@@ -31,7 +31,6 @@ def moveToElement(context, tipoEl, el):
         context.web.execute_script("arguments[0].scrollIntoView(true);", elemento)
     sleep(1)
 
-
 def send(context, tipoEl, el, texto):
     if tipoEl == "ID" or tipoEl.__eq__("id"):
         context.web.find_element_by_id(el).send_keys(texto)
@@ -42,7 +41,6 @@ def send(context, tipoEl, el, texto):
     elif tipoEl == "CLASS" or tipoEl.__eq__("class"):
         context.web.find_element_by_class_name(el).send_keys(texto)
     sleep(1)
-
 
 def validateTextElement(context, tipoEl, el, texto):
     sleep(1)
@@ -60,12 +58,10 @@ def validateTextElement(context, tipoEl, el, texto):
         assert texto == txt
     sleep(1)
 
-
 def validatePageTitle(context, texto):
     sleep(1)
     assert texto == getPageTitle(context)
     sleep(1)
-
 
 def getPageTitle(context):
     titulo = context.web.title
@@ -86,12 +82,10 @@ def scrollDown(context, altura):
         context.web.execute_script("window.scrollTo(0, 550)")
     sleep(1)
 
-
 def scrollDownTheEndOfThePage(context):
     sleep(1)
     context.web.execute_script("window.scrollTo (0, document.body.scrollHeight)")
     sleep(1)
-
 
     def waitElementClickable(context, tipoEl, el):
         button = WebDriverWait(context.driver, 15).until(EC.element_to_be_clickable((By.CSS_SELECTOR, 'button.dismiss')))
@@ -111,7 +105,6 @@ def scrollDownTheEndOfThePage(context):
             element.click()
         sleep(1)
 
-
     def checkIfElementIsVisible(context, tipoEl, el):
         sleep(1)
         if tipoEl == "ID" or tipoEl.__eq__("id"):
@@ -123,7 +116,6 @@ def scrollDownTheEndOfThePage(context):
         elif tipoEl == "CLASS" or tipoEl.__eq__("class"):
             context.web.find_element_by_class_name(el).is_displayed()
         sleep(1)
-
 
     def switchToFrame(context, tipoEl, el):
         sleep(3)
@@ -140,7 +132,6 @@ def scrollDownTheEndOfThePage(context):
             iframe = context.web.find_element_by_class_name(el)
             context.web.switch_to.frame(iframe)
         sleep(1)
-
 
     def returnToWindowPrincipal(context):
         sleep(2)
