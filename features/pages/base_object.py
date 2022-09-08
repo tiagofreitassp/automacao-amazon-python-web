@@ -1,5 +1,6 @@
 from features.variables import amazon_var
 from features.pages import base_page
+from selenium.webdriver.common.by import By
 
 v = amazon_var
 page = base_page
